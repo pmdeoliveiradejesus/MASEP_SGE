@@ -448,9 +448,8 @@ flag=flag+1;
        end
 end %Jacobian matrx building
 Hs= sparse(measurement,statevar,JacobiValue',m,2*n-1);  %Sparse Jacobi matrix
-pause
 Gs=Hs'*Ws*Hs;%Sparse Gain Matrix
-G=H'*W*H
+G=H'*W*H;
 % h(x) calculations
 for k=1:2*n-1
     i=1;
@@ -547,13 +546,13 @@ end
 %deltax(:,iter)=full(dx');
 %fobj(iter)=(z-h)'*Ws*(z-h);
 x(:,iter+1)=x(:,iter)+dx';
-iter=iter+1
+iter=iter+1;
 % full(Gs)
 % eig(full(Gs))
 % pause
 %fobj(iter-1);
 max(abs(dx));
 end
-fobj=(z-h)'*Ws*(z-h)
+fobj=(z-h)'*Ws*(z-h);
 
 
