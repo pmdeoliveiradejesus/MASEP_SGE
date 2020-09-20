@@ -36,56 +36,56 @@ gct=	[
 %  9.- Active power flow measurement ij
 %  10.- Active power flow accuracy (std dev) ij
 %  11.- ReActive power flow measurement ij
-%  12.- ReActive power flow accuracy (std dev) ij
-%  13.- Current flow measurement ij
-%  14.- Current flow accuracy (std dev) ij
-%  15.- Active power flow measurement ij
-%  16.- Active power flow accuracy (std dev) ij
-%  17.- ReActive power flow measurement ij
-%  18.- ReActive power flow accuracy (std dev) ij
-%  19.- Current flow measurement ij
-%  20.- Current flow accuracy (std dev) ij
-
+%  12.- ReActive power flow accuracy (std dev) i
+%  13.- Active power flow measurement ji
+%  14.- Active power flow accuracy (std dev) ji
+%  15.- ReActive power flow measurement ji
+%  16.- ReActive power flow accuracy (std dev) ji
+%  17.- Current flow measurement ij
+%  18.- Current flow accuracy (std dev) ij
+%  19.- Current flow measurement ji
+%  20.- Current flow accuracy (std dev) ji
 %  NOTE: Bus ordering cannot be aleatory	
 
-% 	Bus Dat Array Input (bdat): 
-%	1-  Bus 
-%  2.- Bus Name	
+% 	Bus Dat Array Input (bdat): 	
+%	1-  Bus 	
+%  2.- Bus Name		
 %  3.- Bus Type: (1) Slack or Swing Bus  (2) PV Bus (3) PQ Bus	
 %  4.- Active Power Generation (Initial Value) (Pgen)(p.u)	
 %  5.- Reactive Power Generation (Initial Value) (Qgen)(p.u)	
 %  6.- Active Power Load (Inelastic Value) (Pload)(p.u)	
 %  7.- Reactive Power Load (Inelastic Value) (Qload)(p.u)	
-%  8.- Bus Tension (Initial Value) (V)(p.u)	
-%  9.- Gsh(pu)	
-% 10.- Bsh(pu)
-% 11.- reserved
-% 12.- reserved
-% 13.- reserved
-% 14.- reserved
-% 15.- reserved
-% 16.- Bus Tension Minimum Limit (Vmin)(p.u)
-% 17.- Bus Tension Maximum Limit (Vmax)(p.u)
-% 18.- Active Load Type:  (0) Inelastic (1) Elastic: Linear Price = A - B*Pload 
-% 19.- Demand Function Coeficient A ($/pu) 
-% 20.- Demand Function Coeficient B -slope- (%/pu^2) 
-% 21.- Reactive Load Type:  (0) Inelastic (1) Elastic: Qload = Pload * tan(acos(Bus Power Factor))
-% 22.- Bus Power Factor 
-% 23.- Number of generators
-% 24.- reserved
-% 25.- reserved
-% 26.- Bus Voltage magnitude measurement
-% 27.- Bus Voltage magnitude measurement accuracy (std dev)
-% 28.- Bus angle measurement
-% 29.- Bus angle magnitude measurement accuracy (std dev)
-% 30.- Active power injection measurement  
-% 31.- Active power injection measurement accuracy (std dev)
-% 32.- reActive power injection measurement 
-% 33.- reActive power injection measurement accuracy (std dev)
-% 34.- Active current injection measurement  
-% 35.- Active current injection measurement accuracy (std dev)
-% 36.- reActive current injection measurement  
-% 37.- reActive current injection measurement accuracy (std dev)
+%  8.- Bus Tension (Initial Value) (V)(p.u)		
+%  9.- Gsh(pu)	(not active)	
+% 10.- Bsh(pu)	 
+% 11.- reserved	
+% 12.- reserved	
+% 13.- reserved	
+% 14.- reserved	
+% 15.- reserved	
+% 16.- Bus Tension Minimum Limit (Vmin)(p.u)	
+% 17.- Bus Tension Maximum Limit (Vmax)(p.u)	
+% 18.- Active Load Type:  (0) Inelastic (1) Elastic: Linear Price = A - B*Pload 	
+% 19.- Demand Function Coeficient A ($/pu) 	
+% 20.- Demand Function Coeficient B -slope- %/pu^2) 	
+% 21.- Reactive Load Type:  (0) Inelastic (1) Elastic: Qload = Pload * tan(acos(Bus Power Factor))	
+% 22.- Bus Power Factor 	
+% 23.- Number of generators	
+% 24.- reserved	
+% 25.- reserved	
+% 26.- Bus Voltage magnitude measurement	
+% 27.- Bus Voltage magnitude measurement accuracy (std dev)	
+% 28.- Bus angle measurement	
+% 29.- Bus angle magnitude measurement accuracy (std dev)	
+% 30.- free
+% 31.- Active power injection measurement  	
+% 32.- Active power injection measurement accuracy (std dev)	
+% 33.- reActive power injection measurement 	
+% 34.- reActive power injection measurement accuracy (std dev)	
+% 35.- Active current injection measurement  	
+% 36.- Active current injection measurement accuracy (std dev)	
+% 37.- reActive current injection measurement  	
+% 38.- reActive current injection measurement accuracy (std dev)
 
 
 

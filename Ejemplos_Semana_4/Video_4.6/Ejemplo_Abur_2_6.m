@@ -163,23 +163,23 @@ m=nPF+nPFr+nPI+nQF+nQFr+nQI+nV+ntk; %Total number of measurements
 wii=(pii.^-2);
 W=diag(wii);
 
-%Generate values from a normal distribution with mean x and standard deviation SIGMA 
-SIGMAp=0.000001;
-SIGMAv=0.000001;
-SIGMAt=0.000001;
-for k=1:nPF+nPFr+nPI+nQF+nQFr+nQI 
-z(k)=norminv(rand(1,1),z(k),SIGMAp);
-end
-for k=nPF+nPFr+nPI+nQF+nQFr+nQI+1: nPF+nPFr+nPI+nQF+nQFr+nQI+nV
-z(k)=norminv(rand(1,1),z(k),SIGMAv);
-end
-for k=nPF+nPFr+nPI+nQF+nQFr+nQI+nV+1:nPF+nPFr+nPI+nQF+nQFr+nQI+nV+ntk
-z(k)=norminv(rand(1,1),z(k),SIGMAt);
-end
-%%------
-%callz; % Calls an external measurmenet vector
-%%------
- 
+% %Generate the measurement vector z
+% SIGMAp=0.000001;
+% SIGMAv=0.000001;
+% SIGMAt=0.000001;
+% for k=1:nPF+nPFr+nPI+nQF+nQFr+nQI 
+% z(k)=norminv(rand(1,1),z(k),SIGMAp);
+% end
+% for k=nPF+nPFr+nPI+nQF+nQFr+nQI+1: nPF+nPFr+nPI+nQF+nQFr+nQI+nV
+% z(k)=norminv(rand(1,1),z(k),SIGMAv);
+% end
+% for k=nPF+nPFr+nPI+nQF+nQFr+nQI+nV+1:nPF+nPFr+nPI+nQF+nQFr+nQI+nV+ntk
+% z(k)=norminv(rand(1,1),z(k),SIGMAt);
+% end
+% %------
+% %callz; % Calls an external measurmenet vector
+% %%------
+%  
 for k=1:m
     Ax(k)=k;
 end

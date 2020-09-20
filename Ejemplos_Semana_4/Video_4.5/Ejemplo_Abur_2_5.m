@@ -95,7 +95,7 @@ x(:,1)=[ 0 0 1 1 1]';%theta2 theta3 v1 v2 v3
 
 %% BUILD THE JACOBIAN
 itermax=1;
-for iter=1:1 
+for iter=1:3 
 theta(2)=x(1,iter);
 theta(3)=x(2,iter); 
 v(1)=x(3,iter); 
@@ -161,18 +161,18 @@ if i>1
  end
 end
 end
-x1=x+dx'
+x1=x+dx';
 % %% SOLVING THE NROMAL EQUATION
- x(:,iter+1)=x(:,iter)-inv(G)*(-H'*W*(z-h))
+x(:,iter+1)=x(:,iter)-inv(G)*(-H'*W*(z-h))
 % end
 % %% CONVERGE!
-% fobj=(z-h)'*W*(z-h)
-% stateofthesystem(1,1)=x(1,iter+1)*180/pi;%deg
-% stateofthesystem(2,1)=x(2,iter+1)*180/pi;%deg
-% stateofthesystem(3,1)=x(3,iter+1);%pu
-% stateofthesystem(4,1)=x(4,iter+1);%pu
-% stateofthesystem(5,1)=x(5,iter+1);%pu
-% stateofthesystem(:,1)
+ fobj=(z-h)'*W*(z-h)
+stateofthesystem(1,1)=x(1,iter+1)*180/pi;%deg
+stateofthesystem(2,1)=x(2,iter+1)*180/pi;%deg
+stateofthesystem(3,1)=x(3,iter+1);%pu
+stateofthesystem(4,1)=x(4,iter+1);%pu
+stateofthesystem(5,1)=x(5,iter+1);%pu
+stateofthesystem(:,1)
 % p1=0;
 % for k=1:n
 % p1=p1+v(1)*v(k)*(Gbus(1,k)*cos(theta(1)-theta(k))+Bbus(1,k)*sin(theta(1)-theta(k)));

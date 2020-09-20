@@ -102,7 +102,7 @@ v(1)=x(3,iter);
 v(2)=x(4,iter); 
 v(3)=x(5,iter); 
 
-%  theta(2)     theta(3)     v(1)         v(2)          v(3) (2n-1)
+%  theta(2)     theta(3)     v(1)         v(2)          v(3) (2N-1)
 H=[
    dPijdTj(1,2) 0            dPijdVi(1,2) dPijdVj(1,2)  0;            %pf(1,2)
    0            dPijdTj(1,3) dPijdVi(1,3) 0             dPijdVj(1,3); %pf(1,3) 

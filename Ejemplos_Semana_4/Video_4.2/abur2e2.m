@@ -28,15 +28,15 @@ bdat=	[
 %  9.- Active power flow measurement ij
 %  10.- Active power flow accuracy (std dev) ij
 %  11.- ReActive power flow measurement ij
-%  12.- ReActive power flow accuracy (std dev) ij
-%  13.- Current flow measurement ij
-%  14.- Current flow accuracy (std dev) ij
-%  15.- Active power flow measurement ij
-%  16.- Active power flow accuracy (std dev) ij
-%  17.- ReActive power flow measurement ij
-%  18.- ReActive power flow accuracy (std dev) ij
-%  19.- Current flow measurement ij
-%  20.- Current flow accuracy (std dev) ij
+%  12.- ReActive power flow accuracy (std dev) i
+%  13.- Active power flow measurement ji
+%  14.- Active power flow accuracy (std dev) ji
+%  15.- ReActive power flow measurement ji
+%  16.- ReActive power flow accuracy (std dev) ji
+%  17.- Current flow measurement ij
+%  18.- Current flow accuracy (std dev) ij
+%  19.- Current flow measurement ji
+%  20.- Current flow accuracy (std dev) ji
 
 %  NOTE: Bus ordering cannot be aleatory	
 

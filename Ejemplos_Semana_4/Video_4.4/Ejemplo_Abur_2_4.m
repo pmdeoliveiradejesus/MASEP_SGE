@@ -114,7 +114,7 @@ H=[
    dVidTi(2)    dVidTj(2,3)  dVidVj(2,1)  dVidVi(2)     dVidVj(2,3);  %v(2) m
 ];
 %% THE GAIN MATRIX
-G=H'*W*H;
+G=H'*W*H
 %chol(G)
 % %% THE MEASUREMENT FUNCTION
 % h(1,1)= (v(1)^2*-Gbus(1,2)-v(1)*v(2)*(-Gbus(1,2)*cos(theta(1)-theta(2))+-Bbus(1,2)*sin(theta(1)-theta(2)))); %p12
