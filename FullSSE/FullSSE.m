@@ -19,10 +19,9 @@ disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
 % Select case study::
-reto1;caso='Reto1';
-%prueba_escrita;caso='Prueba Escrita';
-%evaluacion_5_a;caso='Evaluacion 5 - 5 medidas';
-%evaluacion_5_b;caso='Evaluacion 5 - 3 medidas';
+%reto1;caso='Reto1';
+prueba_escrita;caso='Prueba Escrita';
+%abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
 CallYbusBuild;
@@ -553,15 +552,15 @@ iter=iter+1;
 % eig(full(Gs))
 % pause
 %fobj(iter-1);
-max(abs(dx))
+max(abs(dx));
 end
-fobj=(z-h)'*Ws*(z-h)
+fobj=(z-h)'*Ws*(z-h);
 %testing Bad data
-J=(z-h)'*Ws*(z-h)
+J=(z-h)'*Ws*(z-h);
 df=m-(2*n-1);
  pValue=1-chi2cdf(J,m-(2*n-1))%>.01% not suspicious bad data
- Jcrit=chi2inv(.01,m-(2*n-1))
- J-Jcrit %<0 not suspicious bad data
+ Jcrit=chi2inv(.01,m-(2*n-1));
+ J-Jcrit; %<0 not suspicious bad data
  % identyfying bad data 
 uest=z-h;
 
@@ -571,8 +570,11 @@ Omega=S*inv(Ws);
 r=S*uest;
 rN=abs(r)./sqrt(diag(Omega));%if rN(j) > 3 j is bad data
 max(rN);
-[i]=find(rN==max(max((rN))))
-figure
-plot(rN)
-figure
-plot(100*abs((z-h)./h))
+[i]=find(rN==max(max((rN))));
+%figure
+%plot(rN);
+%figure
+%plot(100*abs((z-h)./h));
+
+x
+h
