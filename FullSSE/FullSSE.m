@@ -19,8 +19,8 @@ disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
 % Select case study::
-%reto1;caso='Reto1';
-prueba_escrita;caso='Prueba Escrita';
+reto1;caso='Reto1';
+%prueba_escrita;caso='Prueba Escrita';
 %abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
