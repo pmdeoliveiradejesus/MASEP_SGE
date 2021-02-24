@@ -19,9 +19,9 @@ disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
 % Select case study::
-reto1;caso='Reto1';
+%reto1;caso='Reto1';
 %prueba_escrita;caso='Prueba Escrita';
-%abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
+abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
 CallYbusBuild;
@@ -558,7 +558,7 @@ fobj=(z-h)'*Ws*(z-h);
 %testing Bad data
 J=(z-h)'*Ws*(z-h);
 df=m-(2*n-1);
- pValue=1-chi2cdf(J,m-(2*n-1))%>.01% not suspicious bad data
+ pValue=1-chi2cdf(J,m-(2*n-1))%>.99% not suspicious bad data
  Jcrit=chi2inv(.01,m-(2*n-1));
  J-Jcrit; %<0 not suspicious bad data
  % identyfying bad data 
