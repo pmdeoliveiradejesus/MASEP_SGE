@@ -20,8 +20,9 @@ disp([' '])
 disp([' '])
 % Select case study::
 %reto1;caso='Reto1';
-%prueba_escrita;caso='Prueba Escrita';
-abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
+prueba_escrita;caso='Prueba Escrita';
+%prueba_escrita2;caso='Prueba Escrita 2';
+%abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
 CallYbusBuild;
@@ -450,7 +451,7 @@ flag=flag+1;
 end %Jacobian matrx building
 Hs= sparse(measurement,statevar,JacobiValue',m,2*n-1);  %Sparse Jacobi matrix
 Gs=Hs'*Ws*Hs;%Sparse Gain Matrix
-G=H'*W*H;
+%G=H'*W*H;
 % h(x) calculations
 for k=1:2*n-1
     i=1;

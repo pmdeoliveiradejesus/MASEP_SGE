@@ -15,14 +15,14 @@ bdat=	[
    2  1002   3  0.0000000  0.0000000 0.8000000  0.0000000  1.0000  
    ];
  bdat=horzcat(bdat,bdat0);
-bdat(1,26)=1.000;
-bdat(1,27)=0.01;
-bdat(2,26)=0.9481;
-bdat(2,27)=.01;
-bdat(2,28)=0.0324;
-bdat(2,29)=0.01;
-bdat(2,31)=-0.82;
-bdat(2,32)=.01;
+bdat(1,26)=1.000;%tension pu
+bdat(1,27)=.01;%Precision (desv std)
+bdat(2,26)=0.9481; %tension pu
+bdat(2,27)=.01;% precision (desv std)
+%bdat(2,28)=0.0324;
+%bdat(2,29)=0.01;
+bdat(2,31)=-0.82;%potencia activa pu
+bdat(2,32)=.01;% precision (desv std)
 
   
 % 	Line Dat Array Input (ldat): 																								
