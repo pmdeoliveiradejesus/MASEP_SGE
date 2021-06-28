@@ -333,7 +333,7 @@ flag=flag+1;
    
    if nQFr>0
     for j=1:length(QFr(:,1))
-       if QF(j,4) > 0
+       if QFr(j,4) > 0
           if k<n
        H(i,k)= dQijdTk(QFr(j,1),QFr(j,2),tk(k,1));
                                   if dQijdTk(QFr(j,1),QFr(j,2),tk(k,1)) == 0

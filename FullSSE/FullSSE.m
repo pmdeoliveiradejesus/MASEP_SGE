@@ -19,10 +19,10 @@ disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
 % Select case study::
-%reto1;caso='Reto1';
-prueba_escrita;caso='Prueba Escrita';
+%prueba_escrita;caso='Prueba Escrita';
 %prueba_escrita2;caso='Prueba Escrita 2';
-%abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
+abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
+%reto1;caso='Braga 1996';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
 CallYbusBuild;
@@ -564,7 +564,6 @@ df=m-(2*n-1);
  J-Jcrit; %<0 not suspicious bad data
  % identyfying bad data 
 uest=z-h;
-
 Ks=Hs*inv(Gs)*Hs'*Ws;
 S=eye(m,m)-Ks;
 Omega=S*inv(Ws);
@@ -577,5 +576,3 @@ max(rN);
 %figure
 %plot(100*abs((z-h)./h));
 
-x
-h
