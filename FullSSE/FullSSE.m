@@ -19,8 +19,6 @@ disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
 % Select case study::
-%prueba_escrita;caso='Prueba Escrita';
-%prueba_escrita2;caso='Prueba Escrita 2';
 abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 %reto1;caso='Braga 1996';
 % Options input: convergence;
@@ -571,8 +569,8 @@ r=S*uest;
 rN=abs(r)./sqrt(diag(Omega));%if rN(j) > 3 j is bad data
 max(rN);
 [i]=find(rN==max(max((rN))));
-%figure
-%plot(rN);
+figure
+plot(rN);
 %figure
 %plot(100*abs((z-h)./h));
 
