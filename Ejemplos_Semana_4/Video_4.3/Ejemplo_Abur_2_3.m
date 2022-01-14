@@ -112,7 +112,7 @@ H=[
    dQidTi(2)    dQidTj(2,3)  dQidVj(2,1)  dQidVi(2)     dQidVj(2,3);  %q(2)
    dVidTj(1,2)  dVidTj(1,3)  dVidVi(1)    dVidVj(1,2)   dVidVj(1,3);  %v(1)
    dVidTi(2)    dVidTj(2,3)  dVidVj(2,1)  dVidVi(2)     dVidVj(2,3);  %v(2) m
-];
+]
 % %% THE GAIN MATRIX
 % G=H'*W*H;
 % %% THE MEASUREMENT FUNCTION
