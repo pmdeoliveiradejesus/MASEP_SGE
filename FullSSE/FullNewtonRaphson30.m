@@ -17,15 +17,7 @@ disp([' *  E-mail: pdeoliv@gmail.com                                   *'])
 disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
-reto2; caso='BragaSaraiva 8bus';
-%bergen106; caso='Bergen Example 10.6';
-%ieee12; caso='IEEE12';
-%ieee14withoushunts; caso='IEEE14';
-%load('admitt.mat')
-%rts24IEEE; caso='IEEErts24';
-%ieee14; caso='IEEE14';
-%level0; caso='bus2';
-% Options input: convergence;
+abur4e6; caso='Abur 4e6';
 tic;
 %--------------------------------------------------------------------------------------------------
 %Number of lines and Buses
