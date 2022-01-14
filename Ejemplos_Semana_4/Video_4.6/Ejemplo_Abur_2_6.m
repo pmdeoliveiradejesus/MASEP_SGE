@@ -553,6 +553,6 @@ iter=iter+1;
 %fobj(iter-1);
 max(abs(dx));
 end
-fobj=(z-h)'*Ws*(z-h);
+fobj=(z-h)'*Ws*(z-h)
 
 
