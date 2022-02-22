@@ -10,9 +10,9 @@ ldat=	[
 ];																
 %		1	2       3	4	5	6       7       8   9	10	11	12	13	14	15	16      17      18	19	20	21	22	23 24 25 26 27 28 29 30 31 32	
 bdat=	[	
-        1	1002	1	0	0	0       0   .9996   0	0	0	0	0	0 0	1       1        0	0	0	0	0	1	0  0  0 1.006 0.004 0 0 0 0 0 0 0 0 0;
-		2	1001	3	0	0	0.4958  0.2973 	1   0	0	0	0	0	0 0	0.95	1.05	 0	0	0	0	0	1	0  0  0 .968   0.004  0 0 -0.501 0.010 -0.286 0.01 0 0 0; 
-		3	1001	3	0	0 	1.5138	0.7864 	1   0	0	0	0	0	0 0	0.95	1.05	 0	0	0	0	0	1	0  0  0 0     0     0 0 0 0 0 0 0 0 0;
+        1	1002	1	0	0	0       0   .9996   0	0	0	0	0	0 0	1       1        0	0	0	0	0	1	0  0  0 1.006 0.004 0 0 0 0 0 0 0 0 0 0;
+		2	1001	3	0	0	0.4958  0.2973 	1   0	0	0	0	0	0 0	0.95	1.05	 0	0	0	0	0	1	0  0  0 .968   0.004  0 0 -0.501 0.010 -0.286 0.01 0 0 0 0; 
+		3	1001	3	0	0 	1.5138	0.7864 	1   0	0	0	0	0	0 0	0.95	1.05	 0	0	0	0	0	1	0  0  0 0     0     0 0 0 0 0 0 0 0 0 0;
    ];
 													
 % 	Line Dat Array Input (ldat): 																								
@@ -80,12 +80,3 @@ bdat=	[
 
 
 
-% NOTE: Bus ordering (from 1 to n bus) is important. Must be a coincidence between bus number and file number!
-%Generation Cost array imput
-%  1.- Cost Fuction Co + A*Pgen + B*Pgen^2:  Fixed  Cost Co ($)
-% 2.- Cost Fuction Co + A*Pgen + B*Pgen^2:  Linear Incremental Cost A ($/pu)
-% 3.- Cost Fuction Co + A*Pgen + B*Pgen^2:  Quadratic Incremental Cost B ($/pu^2)
-% 4.- Active Power Generation Minumun Limit (Pgen-min)(p.u);
-% 5.- Active Power Generation Maximun Limit (Pgen-max)(p.u);
-% 6.- Rective Power Generation Minumun Limit (Qgen-min)(p.u);
-% 7.- Rective Power Generation Maximun Limit (Qgen-max)(p.u);
