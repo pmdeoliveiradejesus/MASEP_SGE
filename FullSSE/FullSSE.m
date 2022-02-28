@@ -19,8 +19,10 @@ disp([' ****************************************************************'])
 disp([' '])
 disp([' '])
 % Select case study::
-abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
+%abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 %reto1;caso='Braga 1996';
+%prueba_escrita;caso='Examen';
+evaluacion_5_b;caso='Identificación';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
 CallYbusBuild;
@@ -189,9 +191,9 @@ Ws = sparse(Ax,Ax,wii,m,m); %Sparse weight matrix
 %Flat x0 Initial state 
  for k=1:2*n-1
            if k<n
- x(k,1)=0;
+ x(k,1)=0;%angle
            else
- x(k,1)=1;             
+ x(k,1)=1;%voltage magnitude             
            
            end
  end
@@ -567,7 +569,7 @@ S=eye(m,m)-Ks;
 Omega=S*inv(Ws);
 r=S*uest;
 rN=abs(r)./sqrt(diag(Omega));%if rN(j) > 3 j is bad data
-max(rN);
+max(rN)
 [i]=find(rN==max(max((rN))));
 figure
 plot(rN);
