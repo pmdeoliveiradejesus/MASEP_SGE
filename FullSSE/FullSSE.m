@@ -22,7 +22,8 @@ disp([' '])
 %abur4e6;caso='Abur Exposito Book Example (Chapter 4)';
 %reto1;caso='Braga 1996';
 %prueba_escrita;caso='Examen';
-evaluacion_5_b;caso='Identificación';
+%evaluacion_5_a;caso='Identificación';
+reto1;caso='Solución Reto 1';
 % Options input: convergence;
 %--------------------------------------------------------------------------------------------------
 CallYbusBuild;
@@ -148,7 +149,6 @@ tk(k,4)=bdat(j,29);
 k=k+1;
 end
 end
-
 k=1;
 for j=1:n
 if bdat(j,29) > 0% an Angle measurement exists!
@@ -159,7 +159,6 @@ k=k+1;
 end
 end
 ntk=k-1;
-
 m=nPF+nPFr+nPI+nQF+nQFr+nQI+nV+ntk; %Total number of measurements
 wii=(pii.^-2);
 W=diag(wii);
