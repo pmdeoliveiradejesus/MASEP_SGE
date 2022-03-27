@@ -558,17 +558,19 @@ fobj=(z-h)'*Ws*(z-h);
 %testing Bad data
 J=(z-h)'*Ws*(z-h);
 df=m-(2*n-1);
- pValue=1-chi2cdf(J,m-(2*n-1))%>0.01 not suspicious bad data
- Jcrit=chi2inv(.99,m-(2*n-1));
- J-Jcrit; %<0 not suspicious bad data
- % identyfying bad data 
+past=.99;%
+ pValue=1-chi2cdf(J,m-(2*n-1));%>0.01 not suspicious bad data for a confidence level of 1% or p*=.99
+                         %>0.99 not suspicious bad data for a confidencelevel of 99% or p*=1%
+ J-chi2inv(1-past,m-(2*n-1)) %<0 not suspicious bad data for a confidence level of 1-p*
+
+% identyfying bad data 
 uest=z-h;
 Ks=Hs*inv(Gs)*Hs'*Ws;
 S=eye(m,m)-Ks;
 Omega=S*inv(Ws);
 r=S*uest;
 rN=abs(r)./sqrt(diag(Omega));%if rN(j) > 3 j is bad data
-max(rN)
+max(rN);
 [i]=find(rN==max(max((rN))));
 figure
 plot(rN);
