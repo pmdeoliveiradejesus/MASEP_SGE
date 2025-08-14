@@ -1,2 +1,1 @@
-# MASEP_SGE
-MASEP_GSE - Maestria en Analisis de Sistemas Eléctricos de Potencia - Sistemas de Gestión de Energía
+# MAESTRÍA EN INGENIERIA ELECTRICA UNIANDES - Sistemas de Gestión de Energía Eléctrica
